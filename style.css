@@ -1,0 +1,968 @@
+/* ==========================================================
+   HAPPY BIRTHDAY SANIYA
+   VERSION 2
+========================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#000814;
+color:white;
+overflow-x:hidden;
+
+}
+
+/* =========================
+   LOADER
+========================= */
+
+#loader{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100vh;
+
+background:#000;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+transition:1s;
+
+}
+
+.loaderBox{
+
+width:450px;
+
+text-align:center;
+
+}
+
+.loaderBox h1{
+
+font-size:65px;
+
+letter-spacing:12px;
+
+color:#00e5ff;
+
+text-shadow:
+
+0 0 10px #00e5ff,
+0 0 25px #00e5ff,
+0 0 50px #00e5ff;
+
+}
+
+.loaderBox p{
+
+margin-top:35px;
+
+font-size:22px;
+
+color:white;
+
+letter-spacing:1px;
+
+}
+
+.progress{
+
+margin-top:30px;
+
+width:100%;
+
+height:8px;
+
+background:#111;
+
+border-radius:50px;
+
+overflow:hidden;
+
+box-shadow:0 0 20px #00e5ff;
+
+}
+
+#progressBar{
+
+width:0%;
+
+height:100%;
+
+background:linear-gradient(
+90deg,
+#00e5ff,
+#00ff99,
+#00e5ff
+);
+
+}
+
+/* =========================
+   GALAXY
+========================= */
+
+#galaxy{
+
+position:relative;
+
+width:100%;
+height:100vh;
+
+overflow:hidden;
+
+background:black;
+
+}
+
+#space{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+display:block;
+
+}
+
+/* =========================
+   TEXT OVERLAY
+========================= */
+
+.overlay{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+text-align:center;
+
+z-index:100;
+
+width:100%;
+
+padding:20px;
+
+}
+
+#mainTitle{
+
+font-size:68px;
+
+font-weight:700;
+
+text-shadow:
+
+0 0 15px cyan,
+0 0 35px cyan,
+0 0 60px cyan;
+
+animation:glow 3s infinite;
+
+}
+
+.overlay p{
+
+margin-top:25px;
+
+font-size:26px;
+
+letter-spacing:2px;
+
+color:#dddddd;
+
+}
+
+#startButton{
+
+margin-top:45px;
+
+padding:18px 55px;
+
+border:none;
+
+border-radius:60px;
+
+cursor:pointer;
+
+font-size:22px;
+
+font-weight:bold;
+
+background:#00e5ff;
+
+color:black;
+
+transition:.4s;
+
+box-shadow:
+
+0 0 20px cyan;
+
+}
+
+#startButton:hover{
+
+transform:scale(1.08);
+
+box-shadow:
+
+0 0 40px cyan;
+
+}
+
+/* =========================
+   GLOW
+========================= */
+
+@keyframes glow{
+
+0%{
+
+text-shadow:
+
+0 0 10px cyan;
+
+}
+
+50%{
+
+text-shadow:
+
+0 0 35px cyan,
+0 0 70px cyan;
+
+}
+
+100%{
+
+text-shadow:
+
+0 0 10px cyan;
+
+}
+
+}/* ==========================================================
+   EARTH SECTION
+========================================================== */
+
+#earth{
+
+width:100%;
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+background:
+radial-gradient(circle at center,#041d4d,#000814,#000);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+#earthContainer{
+
+width:350px;
+height:350px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle at 30% 30%,
+#4fc3ff,
+#1976d2,
+#0d47a1,
+#001f54);
+
+box-shadow:
+
+0 0 80px #3fa9ff,
+0 0 160px rgba(0,170,255,.4);
+
+animation:
+
+earthRotate 20s linear infinite,
+earthFloat 6s ease-in-out infinite;
+
+}
+
+@keyframes earthRotate{
+
+0%{
+
+transform:rotate(0deg);
+
+}
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+@keyframes earthFloat{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* ==========================================================
+DESTINATION
+========================================================== */
+
+#destination{
+
+width:100%;
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+flex-direction:column;
+
+background:#010611;
+
+}
+
+#destination h1{
+
+font-size:70px;
+
+color:#00ffff;
+
+text-shadow:
+
+0 0 20px cyan;
+
+}
+
+#destination h2{
+
+margin-top:25px;
+
+font-size:95px;
+
+color:white;
+
+letter-spacing:12px;
+
+text-shadow:
+
+0 0 30px gold;
+
+}
+
+/* ==========================================================
+BIRTHDAY
+========================================================== */
+
+#birthday{
+
+width:100%;
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+flex-direction:column;
+
+background:
+
+linear-gradient(
+180deg,
+#000814,
+#001d3d,
+#000814
+);
+
+}
+
+#birthday h1{
+
+font-size:75px;
+
+color:#FFD700;
+
+text-shadow:
+
+0 0 20px gold;
+
+}
+
+#birthday h2{
+
+font-size:90px;
+
+margin-top:25px;
+
+color:white;
+
+}
+
+#giftButton{
+
+margin-top:50px;
+
+padding:20px 60px;
+
+font-size:24px;
+
+border:none;
+
+border-radius:60px;
+
+cursor:pointer;
+
+background:#FFD700;
+
+color:black;
+
+font-weight:bold;
+
+transition:.4s;
+
+box-shadow:
+
+0 0 30px gold;
+
+}
+
+#giftButton:hover{
+
+transform:scale(1.08);
+
+}
+
+/* ==========================================================
+GALLERY
+========================================================== */
+
+#gallery{
+
+padding:120px 80px;
+
+background:#010b1d;
+
+}
+
+#gallery h1{
+
+text-align:center;
+
+font-size:65px;
+
+margin-bottom:70px;
+
+}
+
+.photoGrid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.photoGrid img{
+
+width:100%;
+
+height:360px;
+
+object-fit:cover;
+
+border-radius:22px;
+
+transition:.5s;
+
+box-shadow:
+
+0 0 25px black;
+
+}
+
+.photoGrid img:hover{
+
+transform:
+
+scale(1.06)
+rotate(2deg);
+
+box-shadow:
+
+0 0 35px cyan;
+
+}
+
+/* ==========================================================
+LETTER
+========================================================== */
+
+#letter{
+
+padding:120px;
+
+background:#000814;
+
+text-align:center;
+
+}
+
+#letter h1{
+
+font-size:70px;
+
+margin-bottom:60px;
+
+}
+
+#typing{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:28px;
+
+line-height:55px;
+
+color:#ddd;
+
+}
+
+/* ==========================================================
+RESPONSIVE
+========================================================== */
+
+@media(max-width:900px){
+
+#mainTitle{
+
+font-size:42px;
+
+}
+
+.overlay p{
+
+font-size:18px;
+
+}
+
+#destination h1{
+
+font-size:45px;
+
+}
+
+#destination h2{
+
+font-size:55px;
+
+letter-spacing:5px;
+
+}
+
+#birthday h1{
+
+font-size:45px;
+
+}
+
+#birthday h2{
+
+font-size:55px;
+
+}
+
+#gallery{
+
+padding:70px 25px;
+
+}
+
+#letter{
+
+padding:60px 20px;
+
+}
+
+#typing{
+
+font-size:20px;
+
+line-height:40px;
+
+}
+
+#earthContainer{
+
+width:240px;
+
+height:240px;
+
+}
+
+}#destination{
+
+display:none;
+
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+width:100%;
+height:100vh;
+
+background:#000;
+
+}
+
+#earth{
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+width:100%;
+height:100vh;
+
+background:#020814;
+
+}
+
+#earthContainer{
+
+width:260px;
+height:260px;
+
+border-radius:50%;
+
+background:radial-gradient(circle at 35% 30%,#7edbff,#005dff,#00142f);
+
+box-shadow:
+
+0 0 80px #00bfff,
+
+0 0 150px #0066ff;
+
+animation:earthSpin 18s linear infinite;
+
+}
+
+@keyframes earthSpin{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}#jarvisInfo{
+
+position:fixed;
+
+left:50%;
+top:50%;
+
+transform:translate(-50%,-50%);
+
+font-size:48px;
+
+font-weight:700;
+
+color:#00eaff;
+
+font-family:Poppins,sans-serif;
+
+text-align:center;
+
+text-shadow:
+
+0 0 20px cyan,
+
+0 0 40px #00eaff,
+
+0 0 80px #00bfff;
+
+animation:pulse 1.5s infinite;
+
+z-index:999999;
+
+pointer-events:none;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+opacity:.5;
+transform:translate(-50%,-50%) scale(.95);
+
+}
+
+50%{
+
+opacity:1;
+transform:translate(-50%,-50%) scale(1.08);
+
+}
+
+100%{
+
+opacity:.5;
+transform:translate(-50%,-50%) scale(.95);
+
+}
+
+}#targetTitle{
+
+font-size:72px;
+color:#00ff99;
+
+text-shadow:
+
+0 0 20px #00ff99,
+0 0 50px #00ff99,
+0 0 100px #00ff99;
+
+animation:blink 1s infinite;
+
+}
+
+#targetName{
+
+font-size:60px;
+
+margin-top:20px;
+
+color:white;
+
+text-shadow:
+
+0 0 20px hotpink,
+0 0 50px hotpink;
+
+}
+
+#targetLocation{
+
+margin-top:20px;
+
+font-size:24px;
+
+letter-spacing:4px;
+
+color:#cccccc;
+
+}
+
+@keyframes blink{
+
+0%{
+
+opacity:1;
+
+}
+
+50%{
+
+opacity:.35;
+
+}
+
+100%{
+
+opacity:1;
+
+}
+
+}body{
+
+overflow-x:hidden;
+
+}.photoGrid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+padding:50px;
+
+}
+
+.photoGrid img{
+
+width:100%;
+
+border-radius:18px;
+
+box-shadow:
+
+0 0 20px rgba(255,255,255,.3);
+
+transition:.6s;
+
+cursor:pointer;
+
+}
+
+.photoGrid img:hover{
+
+transform:scale(1.08);
+
+box-shadow:
+
+0 0 40px cyan;
+
+}
+
+#letter{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+min-height:100vh;
+
+padding:60px;
+
+text-align:center;
+
+}
+
+#typing{
+
+max-width:900px;
+
+font-size:28px;
+
+line-height:2;
+
+color:white;
+
+}/* ===========================================
+   WHITE FLASH
+=========================================== */
+
+#flash{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:white;
+
+opacity:0;
+
+pointer-events:none;
+
+z-index:9999999;
+
+transition:1s;
+
+}#jarvisInfo{
+
+position:fixed;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+font-family:Poppins,sans-serif;
+
+font-weight:700;
+
+text-align:center;
+
+color:#00eaff;
+
+text-shadow:
+
+0 0 20px cyan,
+0 0 40px cyan,
+0 0 80px cyan;
+
+z-index:999999;
+
+display:none;
+
+}
