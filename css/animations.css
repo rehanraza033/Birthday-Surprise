@@ -1,0 +1,273 @@
+/* ==========================================================
+   ANIMATIONS V2
+========================================================== */
+
+/* FADE */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+.fadeIn{
+
+    animation:fadeIn 1.2s ease forwards;
+
+}
+
+/* ZOOM */
+
+@keyframes zoomIn{
+
+    from{
+
+        transform:scale(.7);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.zoomIn{
+
+    animation:zoomIn 1s ease forwards;
+
+}
+
+/* FLOAT */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.floating{
+
+    animation:floating 3s ease-in-out infinite;
+
+}
+
+/* GLOW */
+
+@keyframes glow{
+
+    0%{
+
+        text-shadow:0 0 10px cyan;
+
+    }
+
+    50%{
+
+        text-shadow:
+
+        0 0 20px cyan,
+
+        0 0 50px cyan;
+
+    }
+
+    100%{
+
+        text-shadow:0 0 10px cyan;
+
+    }
+
+}
+
+.glow{
+
+    animation:glow 2s infinite;
+
+}
+
+/* HEART */
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    25%{
+
+        transform:scale(1.08);
+
+    }
+
+    50%{
+
+        transform:scale(1);
+
+    }
+
+    75%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.heartbeat{
+
+    animation:heartbeat 1.2s infinite;
+
+}
+
+/* ROTATE */
+
+@keyframes rotate360{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.rotate{
+
+    animation:rotate360 25s linear infinite;
+
+}
+
+/* FLASH */
+
+@keyframes flash{
+
+    0%{
+
+        opacity:0;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+    }
+
+}
+
+.flash{
+
+    animation:flash 1s forwards;
+
+}
+
+/* SLIDE UP */
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.slideUp{
+
+    animation:slideUp 1s ease forwards;
+
+}
+
+/* PHOTO */
+
+.photoGrid img{
+
+    animation:zoomIn .8s ease;
+
+}
+
+/* BUTTON */
+
+button{
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* LETTER */
+
+#typing{
+
+    animation:fadeIn 1s;
+
+}

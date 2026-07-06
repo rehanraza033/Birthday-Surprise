@@ -171,15 +171,7 @@ function resetShootingStar(){
 
 let fly = false;
 
-const startButton = document.getElementById("startButton");
 
-startButton.addEventListener("click",()=>{
-
-    fly = true;
-
-    startButton.style.display="none";
-
-});
 
 /* ==========================================================
    ANIMATION LOOP
